@@ -1,0 +1,236 @@
+@font-face {
+    font-family: 'HelveticaLT37ThinCondensed';    
+    src: url('fonts/helvetica.ttf');
+}
+
+html,body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, "Lucida Grande", sans-serif;  
+  font-family: 'HelveticaLT37ThinCondensed';    
+}
+ul {
+  list-style: none;
+  margin: 0;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+/* Clearfix  */
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.wrap {
+  background: #fff;
+}
+.header {
+  height: 150px;
+  background: #fff url(../images/logo.png) no-repeat center center;
+}
+/*.top {
+  height: 225px;
+  background: #b9b9b7 url(../images/top.png) no-repeat center center;
+}*/
+.top {
+  background: url(../images/top.png) no-repeat top center, url(../images/back.jpg) repeat-x;
+  position: fixed;
+  width: 100%;
+  height: 300%;
+  top:0;
+  left:0;
+  z-index: -1;
+  
+}
+section {
+  color: #fff;
+  font-family: arial;
+  width: 100%;
+  height: 270px;
+  margin: auto;
+  line-height: 20px;
+  font-size: 16px;
+}
+.content {
+  margin: 124px auto;
+  width: 960px;
+  background: #fff;
+}
+.nav-block {
+  text-align: center;
+  padding: 50px 0;
+}
+.scroll-nav {
+  text-align: center;
+  padding: 10px 0;
+  top: 0;
+  position: fixed;
+  background: #fff;
+  left: 0%;
+  height: 30px;
+  width: 100%;
+}
+.lang {
+  float: right;
+}
+.nav ul li {
+  float: left;
+  margin-left: 30px;
+}
+.nav ul li:first-child {
+  margin-left: 0;
+}
+
+.nav {
+  position: relative;
+  display: inline-block;  
+}
+
+.lang a.active {
+  color: #f00;  
+  font-weight: bold;
+}
+
+.article {
+  width: 273px;
+  height: 370px;
+  font-size: 10px;
+  float: left;
+  margin-left: 70px;
+}
+.article:nth-child(3n+1) {
+  margin-left: 0;
+}
+.article:nth-child(n+4) {
+  margin-top: 70px;
+}
+.article .head {
+  padding: 15px 0;
+  font-weight: bold;
+  font-size: 16px;
+}
+.article-img img {
+  width: 270px;
+}
+.article .desc {
+  text-align: justify;
+  font-size: 14px;
+}
+/*works*/
+.works {
+  display: inline-block;
+  margin-top: 120px;  
+}
+.shadow-top, .shadow-bottom {
+  position: absolute;
+  height: 34px;
+  width: 1000px;
+  z-index: 10;
+  opacity: 0.5;
+}
+.shadow-top {
+  background: url(../images/shadow-top.png) no-repeat center center;
+  margin-top: -80px;  
+}
+.shadow-bottom {
+  background: url(../images/shadow-bottom.png) no-repeat center center;  
+  margin-top: 40px;  
+}
+.works .macbook {
+  float: right;
+}
+.works .macbook img {
+  width: 320px;
+  height: 300px;
+}
+.works .title {
+  display: inline-block;
+  width: 550px;
+  height: 300px;
+  background: url(../images/work.png) no-repeat center center;
+}
+/*/works*/
+
+.slide {
+  background: url(../images/mac.png) no-repeat top center;
+  width: 400px;  
+   box-sizing: border-box;
+  -moz-box-sizing: border-box; /*Firefox 1-3*/
+  -webkit-box-sizing: border-box; /* Safari */
+  padding: 270px 0 0 200px;
+}
+.jssorn03 div, .jssorn03 .av {
+    background: url(../images/circle.png) no-repeat center center;
+    overflow:hidden;
+    cursor: pointer;
+    color: #f0f0f0;
+}
+.jssorn03 .av {
+  background: url(../images/circle_av.png) no-repeat center center;
+  color: #e4831f;
+}
+/*Pier*/
+.pier {
+  margin-top: 100px;
+}
+.pier .desc {
+  float: right;
+  width: 400px;
+  font-size: 14px;
+  margin-top: 100px;
+}
+.pier .head {
+  font-size: 20px;
+  font-weight: bold;
+}
+.pier .head span {
+  color: #ff8400;
+}
+
+.pier .photo {
+  background: url(../images/pier.png) no-repeat top center;
+  width: 550px;
+  height: 600px;
+
+}
+/*/Pier*/
+
+/*IDEA*/
+.idea {
+  width: 960px;
+  height: 300px;
+  background: url(../images/idea.png) no-repeat center center;
+  margin-bottom: 70px;
+}
+/*/IDEA*/
+
+/*footer*/
+.footer {
+  background: #3c3c3c;
+  padding: 50px;
+}
+.partners {
+  width: 960px;
+  margin: auto;
+  text-align: center;
+}
+.partners img {
+  margin-left: 10px;
+}
+.partners img:first-child {
+  margin-left: 0;
+}
+.cprt {
+  margin: 70px auto 0 0;
+  text-align: center;
+  color: #dedede;
+  font-size: 14px;  
+}
+/*/footer*/
+
+
+

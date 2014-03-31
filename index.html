@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <!--<script src="js/script.js"></script>-->
+  <script src="js/jssor.slider.js"></script>
+  <script>
+    jQuery(document).ready(function ($) {
+        /*var options = { $AutoPlay: true };
+        var jssor_slider1 = new $JssorSlider$('slider1_container', options);*/
+         var options = {
+                $DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+
+                $NavigatorOptions: {                                //[Optional] Options to specify and enable navigator or not
+                    $Class: $JssorNavigator$,                       //[Required] Class to create navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $ActionMode: 1,                                 //[Optional] 0 None, 1 act by click, 2 act by mouse hover, 3 both, default value is 1
+                    $AutoCenter: 0,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
+                    $Lanes: 1,                                      //[Optional] Specify lanes to arrange items, default value is 1
+                    $SpacingX: 0,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
+                    $SpacingY: 0,                                   //[Optional] Vertical space between each item in pixel, default value is 0
+                    $Orientation: 1                                 //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
+                }
+            };
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+              
+
+            //----------------------
+            function parallax(){
+              var scrolled = $(window).scrollTop();
+               $('.top').css('top', -(scrolled) + 'px');
+             }
+             function parallax(){
+                var scrolled = $(window).scrollTop();
+                $('.top').css('top', -(scrolled * 0.2) + 'px');
+              }
+              $(window).scroll(function(e){
+                  parallax();                                    
+              });        
+              //--------------
+              $(window).scroll(function(){
+                if ($(window).scrollTop() >= 290) {
+                   $('.nav-block').addClass('scroll-nav');
+                }
+                else {
+                   $('.nav-block').removeClass('scroll-nav');
+                }
+            });
+
+    });
+</script>
+  
+
+</head>
+<body>
+  <div class="main">
+    
+    <header class="header"></header>
+    
+    <div class="top">
+      <section></section>
+    </div>       
+
+    <div class="wrap">
+      <div class="content">
+        <div class="nav-block">
+          <div class="lang">
+            <a class="active" href="">ENG</a>
+            /
+            <a href="">RUS</a>          
+          </div>
+          <nav class="nav">
+            <ul>
+              <li><a href="">ABOUT ME</a></li>
+              <li><a href="">WHO?</a></li>
+              <li><a href="">WHAT WE DO</a></li>
+              <li><a href=""><span>LIFE</span>STYLE</a></li>
+              <li><a href="">HOW MUCH</a></li>
+              <li><a href="">CONTACTS</a></li>
+            </ul>        
+          </nav>
+        </div>    
+
+        <div class="articles">
+          <div class="article">
+            <div class="article-img">
+              <img src="images/1pic.png">
+            </div>
+            <div class="head">PERFOMANCE IN LOS-ANGELES</div>
+            <div class="desc">
+              This post is part of our daily series of posts showing the most inspiring images selected by some of the Abduzeedo's writers and users. If you want to participate and share your graphic design inspiration, You can submit your images and... 
+            </div>
+          </div>
+
+          <div class="article">
+            <div class="article-img">
+              <img src="images/2pic.png">
+            </div>
+            <div class="head">AUGUST WORKS</div>
+            <div class="desc">           
+              Mega Man is one of the top 10 Capcom franchises, what begin with simple platform and shooting game evolved to a huge family of 50 video games thru the last three decades. Personally I'm huge fan of the first three Meg Man games, despite...  
+            </div>
+          </div>
+
+          <div class="article">
+            <div class="article-img">
+              <img src="images/3pic.png">
+            </div>
+            <div class="head">NEW PRINTS FOR KRISTINA SI</div>
+            <div class="desc">            
+              Brock Davis is a very talented designer who likes to use his creativity and his iphone camera to work together. In 2013 he took some awesome photos that are super creative so I decided to select a few of them to share with you. Enjoy! 
+            </div>
+          </div>
+
+          <div class="article">
+            <div class="article-img">
+              <img src="images/4pic.png">
+            </div>
+            <div class="head">SEPTEMBER WORKS</div>
+            <div class="desc">            
+              This post is part of our daily series of posts showing the most inspiring images selected by some of the Abduzeedo's writers and users. If you want to participate and share your graphic design inspiration, You can submit your images and... 
+            </div>
+          </div>
+
+          <div class="article">
+            <div class="article-img">
+              <img src="images/5pic.png">
+            </div>
+            <div class="head">POSTER FOR PANTEROV</div>
+            <div class="desc">            
+              Mega Man is one of the top 10 Capcom franchises, what begin with simple platform and shooting game evolved to a huge family of 50 video games thru the last three decades. Personally I'm huge fan of the first three Meg Man games, despite...  
+            </div>
+          </div>
+
+          <div class="article">
+            <div class="article-img">
+              <img src="images/6pic.png">
+            </div>
+            <div class="head">NEW WORKS NEWS NUMBER ONE</div>
+            <div class="desc">            
+              Brock Davis is a very talented designer who likes to use his creativity and his iphone camera to work together. In 2013 he took some awesome photos that are super creative so I decided to select a few of them to share with you. Enjoy! 
+            </div>
+          </div>
+        </div>
+
+
+        <div class="works">
+        <div class="shadow-top"></div>
+          <div class="macbook">
+            <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 400px; height: 400px;">            
+              <div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 400px; height: 330px;">
+                <div class="slide">Lion</div>
+                <div class="slide">Lion</div>
+                  
+              </div>            
+               <!-- Navigator Skin Begin -->        
+          <!-- navigator container -->
+          <div u="navigator" class="jssorn03" style="position: absolute; top: 300px; left: 195px">
+              <!-- navigator item prototype -->
+              <div u="prototype" style="position: absolute; width: 21px; height: 21px; text-align:center; line-height:21px; font-size:12px;"><NumberTemplate></NumberTemplate></div>
+          </div>
+          <!-- Navigator Skin End -->
+          </div>        
+
+          </div>
+          <div class="title"></div>
+          <div class="shadow-bottom"></div>
+        </div>
+
+        <div class="pier">
+          <div class="desc">
+            <div class="head"><span>Pier Kampor</span>  Multimedia Workshop</div>
+            <p>Большинство разработчиков даже с маломальским опытом сталкиваются с проблемами дизайна своего решения, когда поставленную задачу можно решить десятком разных способов и нужно выбрать определенный, более или менее адекватный вариант. </p>
+
+            <p>Отношение к этапу проектирования (дизайна) может быть самым разным, начиная от подхода, принятого на ранних этапах развития методологии XP, когда считалось, что дизайн и архитектура – это динозавры, которым нет места в динамично развивающемся мире agile разработки. Многие и сейчас не задумываются о дизайне решения, считая, что итеративный процесс разработки + рефакторинг сделают все за нас и хороший дизайн появится сам собой. </p>
+
+            <p>Есть и другая крайность, когда команда можем потратить недели в поисках идеального решения (Святого Грааля архитектора), когда дизайн будет способен «расширяться» во всех возможных направлениях, и быть настолько «гибким», что реализовать его не будет никакой возможности. </p>
+          </div>
+          <div class="photo"></div>
+        </div>
+
+        <div class="idea"></div>
+      </div>
+
+      <!---->
+      <!--/-->      
+    </div>
+  </div>
+  
+
+  <footer class="footer">
+    <div class="partners">
+      <img src="images/lamborgini.png">
+      <img src="images/mirax.png">
+      <img src="images/carby.png">
+      <img src="images/lanit.png">
+      <img src="images/msk.png">
+      <img src="images/gq.png">
+      <img src="images/blackstar.png">
+      <img src="images/library.png">
+      <img src="images/glab.png">
+      <img src="images/club.png">
+      <img src="images/levart.png">
+      <img src="images/robo.png">
+      <img src="images/smash.png">
+      <img src="images/velvet.png">
+    </div>
+    <div class="cprt">
+      © 2013 «Pier Kampor dsgn.» TM Creative & Deisgn Workshop</br>
+      Перепечатка, а равно использование материалов c данного сайта, разрешена только по согласию с владельцем</br>
+      Владелец оставляет за собой право воспользоваться 146 статьей УК РФ при нарушении авторских и смежных прав.</br>
+    </div>
+  </footer>
+
+</body>
+</html>
